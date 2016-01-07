@@ -1,0 +1,515 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Project: Delinda's Portfolio */
+/*Client: Delinda Frazier */
+/*Website: *www.delindafrazier.net
+
+-----------------------------------------
+Color Palette URL:; http://www.materialpalette.com
+
+Primary color (Purple): #673AB7
+Dark Primary color (Dark Purple): #673AB7
+Light Primary Color (Light-purple): #D1C4E9
+Primary text (Black): #212121
+Secondary text (Gray): #727272
+Accent Color: (Teal): #009688
+-----------------------------------------------
+*/
+.container-content {
+	margin: 0 auto;
+	padding-left: 50px;
+	padding-right:50px;
+}
+
+.container-fluid {
+	border: 5px solid yellow;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #727272;
+}
+
+h1,
+h2 {
+	font-family: 'Bevan', Rockwell, serif;
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+h2, h3 {
+	color: #212121;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+section {
+	padding-top: 70px;
+	padding-bottom: 50px;
+	margin-bottom: 0;
+}
+
+.section-title {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+/*Primary color*/
+.purple {
+	background: #673AB7;
+}
+
+.light-purple {
+	color: #D1C4E9;
+}
+
+/*section headers*/
+.black {
+	background: #212121;
+}
+
+/*Secondary text - body text*/
+.gray {
+	background: #727272
+}
+
+/*Accent Color*/
+
+.teal {
+	background: #009688;
+}
+
+.gray-background {
+	background: #e5e5e5;
+}
+
+.right {
+	float: right;
+}
+
+/*----------------------------
+	HEADER
+----------------------------*/
+.jumbotron {
+    padding-left: 55px;
+	padding-top: 150px;
+	padding-bottom: 50px;
+	margin-bottom: 0;
+    color: white;
+}
+
+/*-------------------------
+	MAIN NAVIGATION
+---------------------------*/
+
+.navbar {
+	margin-bottom: 0;
+	width: 100%;
+}
+
+.navbar-toggle {
+    border-color: #009688;
+    background-color: #009688;
+    float: right;
+}
+
+.nav li a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav li 
+a:hover,
+a:focus,
+a:active {
+    color: #009688;
+}
+
+.navbar-default .navbar-nav>.active>a {
+	 background-color: #009688;
+	 background-image: none;
+	 border-radius: 3px;
+	 border: 0;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #009688;
+}
+
+/*------------------------------
+	SKILLS - code by Maulidan - http://codepen.io/maulidian/pen/jPOadL 
+--------------------------------*/
+
+.Count:after{
+  content:"%"
+}
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property: width, background-color;
+	-moz-transition-property: width, background-color;
+	-ms-transition-property: width, background-color;
+	-o-transition-property: width, background-color;
+	transition-property: width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+
+/*------------------------------
+	PORTFOLIO -Implemented tutorial and code from:
+	http://www.9bitstudios.com/demos/blog/jquery-isotope/
+--------------------------------*/
+
+.portfolioContainer {
+	margin: 0 auto;
+	padding-left: 15px;
+}
+
+.portfolioFilter ul {
+		margin: 25px auto;
+		text-align: center;
+}
+
+.portfolioFilter li {
+	display: inline;
+	text-transform: uppercase;
+	
+}
+.portfolioFilter a { 
+    margin-right: 20px; 
+	color: #666;
+	text-decoration: none;
+}
+
+.portfolioFilter a.current { 
+    font-weight: 700;
+    color: #009688;
+}
+
+.portfolioFilter a:hover {
+	color: #009688;
+	font-weight: 700; 
+
+}
+
+.portfolioOverflow {
+	overflow: hidden;
+}
+
+.portfolioContainer img {
+	margin: 5px;
+}
+
+.isotope-item {
+    z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-propert
+    y: transform, opacity;
+}
+/*---Portfolio image Hover Overlay--*/
+
+.view {
+   width: 250px;
+   height: 150px;
+   margin: 10px;
+   float: left;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   /*box-shadow: 0px 0px 5px #aaa;*/
+   cursor: default;
+}
+.view .mask, .view .content {
+   width: 250px;
+   height: 150px;
+   position: absolute;
+   overflow: hidden;
+   top: 5px;
+   left: 5px;
+}
+.view img {
+   display: block;
+   position: relative;
+}
+.view a.info {
+  background: url("../images/link.png") center no-repeat;
+  display: inline-block;
+   text-decoration: none;
+   padding:0;
+   text-indent:-9999px;
+   width:20px;
+   height:20px;
+   margin-top: 70px;
+}
+
+.third-effect .mask {
+   opacity: 0;
+   overflow:visible;
+   border:100px solid rgba(0,0,0,0.7);
+   -moz-box-sizing:border-box;
+   -webkit-box-sizing:border-box;
+   box-sizing:border-box;
+   -webkit-transition: all 0.4s ease-in-out;
+   -moz-transition: all 0.4s ease-in-out;
+   -o-transition: all 0.4s ease-in-out;
+   -ms-transition: all 0.4s ease-in-out;
+   transition: all 0.4s ease-in-out;
+}
+.third-effect a.info {
+   position:relative;
+   top:-10px;
+   opacity: 0;
+   -webkit-transition: opacity 0.5s 0s ease-in-out;
+   -moz-transition: opacity 0.5s 0s ease-in-out;
+   -o-transition: opacity 0.5s 0s ease-in-out;
+   -ms-transition: opacity 0.5s 0s ease-in-out;
+   transition: opacity 0.5s 0s ease-in-out;
+}
+.third-effect:hover .mask {
+   opacity: 1;
+   border:100px solid rgba(0,0,0,0.7);
+}
+.third-effect:hover a.info {
+	opacity:1;
+	-moz-transition-delay: 0.3s;
+	-webkit-transition-delay: 0.3s;
+	-o-transition-delay: 0.3s;
+	-ms-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+/*--MODAL STYLES---------------->*/
+
+.single-project .project-thumbnail {
+	margin: 0 auto 20px;
+}
+
+.project-description {
+	/*border: 1px solid red;*/
+	/*margin-top: 15px;*/
+	font-size: 14px;
+	padding: 0 15px 15px;
+}
+.project-stats {
+	list-style: none;
+	padding-left: 0;
+}
+
+.project-stats li {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+.project-stats li:last-child {
+	border-bottom: none;
+}
+
+.project-thumbnail{
+	width: 360px;
+	margin-bottom: 20px;
+}
+
+/*--CAROUSEL STYLES---------------->
+http://stackoverflow.com/questions/20207487/bootstrap-3-default-carousel-how-to-move-indicators-down-and-outside-of-slide-c*/
+.carousel-indicators {
+  bottom:-50px;
+}
+
+.carousel-inner {
+   margin-bottom:50px;
+}
+/*--http://stackoverflow.com/questions/17872913/carousel-indicators-not-showing-up-on-white-background-on-slides-custom-style-o*/
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70,70,70,.25);
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+}
+
+.project-video {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+/*-----------------------------
+	CONTACT
+------------------------------ */
+#contact .container {
+	text-align: center;	
+}
+
+/*-----------------------------
+	FOOTER
+-------------------------------*/
+footer section {
+	background: black;
+	color: white;
+	text-align: center;
+	padding: 25px 0;
+}
+
+footer p {
+	font-size: 12px;
+	margin: 0 auto;
+}
+
+#social-icons li {
+	list-style: none;
+	padding: 10px;
+	margin: 15px;
+	line-height: .5;
+	display: inline-block;
+	color:#009688;
+}
+
+#social-icons li a {
+	color:#009688;
+}
+
+#social-icons li a:hover {
+	color:#FFF;
+}
+
+
+/*------------------------------
+MEDIA QUERIES
+------------------------------*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px)  {
+	
+.containerContent {
+    width: 750px;
+}
+
+.portfolioContainer {
+	width: 750px;
+}
+
+.project-summary {
+	padding-top: 20px;
+}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+.containerContent {
+    width: 950px;
+}
+
+.portfolioContainer {
+	width: 950px;
+}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+.containerContent  {
+    width: 1170px;
+}
+
+.portfolioContainer {
+	width: 1170px;
+}
+
+}
