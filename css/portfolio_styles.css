@@ -148,8 +148,14 @@ a:active {
 }
 
 /*------------------------------
-	SKILLS - code by Maulidan - http://codepen.io/maulidian/pen/jPOadL 
+	SKILLS 
+	Skillbar code by Maulidan - http://codepen.io/maulidian/pen/jPOadL 
 --------------------------------*/
+
+.skillbar-container {
+	width: 70%;
+	margin: 0 auto;
+}
 
 .Count:after{
   content:"%"
@@ -229,9 +235,11 @@ a:active {
 }
 
 /*------------------------------
-	PORTFOLIO -Implemented tutorial and code from:
-	http://www.9bitstudios.com/demos/blog/jquery-isotope/
+	PORTFOLIO	
 --------------------------------*/
+
+/*--Isotope tutorial and code from:
+	http://www.9bitstudios.com/demos/blog/jquery-isotope/--*/
 
 .portfolioContainer {
 	margin: 0 auto;
@@ -303,7 +311,8 @@ a:active {
     transition-propert
     y: transform, opacity;
 }
-/*---Portfolio image Hover Overlay--*/
+/*---Portfolio:
+	  Hover Overlay on Image---------------->*/
 
 .view {
    width: 250px;
@@ -375,15 +384,14 @@ a:active {
 	transition-delay: 0.3s;
 }
 
-/*--MODAL STYLES---------------->*/
+/*--Portfolio Section:
+	 Modal Styles---------------->*/
 
 .single-project .project-thumbnail {
 	margin: 0 auto 20px;
 }
 
 .project-description {
-	/*border: 1px solid red;*/
-	/*margin-top: 15px;*/
 	font-size: 14px;
 	padding: 0 15px 15px;
 }
@@ -406,8 +414,9 @@ a:active {
 	margin-bottom: 20px;
 }
 
-/*--CAROUSEL STYLES---------------->
-http://stackoverflow.com/questions/20207487/bootstrap-3-default-carousel-how-to-move-indicators-down-and-outside-of-slide-c*/
+/*--Portfolio Section:
+	Styles for Carousel inside Modals
+	  http://stackoverflow.com/questions/20207487/bootstrap-3-default-carousel-how-to-move-indicators-down-and-outside-of-slide-c*/
 .carousel-indicators {
   bottom:-50px;
 }
